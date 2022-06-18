@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starbucks</title>
+  <link rel="stylesheet" href="stilos.css">
+</head>
+
+<body>
+
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="" class="logo"><img href="#" src="./logo.png" class="logo"></a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">What's New</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textbox">
+        <h2>Its not just Coffe <br> <span>Starbucks</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, explicabo, neque reprehenderit saepe numquam
+          commodi deleniti earum aut doloremque laborum sit tempore repudiandae, dicta rerum iusto! Ullam nisi natus
+          expedita.
+          .</p>
+        <a href="#">Lear more</a>
+
+      </div>
+      <div class="imgBox">
+        <img src="./verde.jpg" alt="" class="starbucks">
+      </div>
+    </div>
+    <ul class="thumb">
+      <li><img src="./thumb2.jpg" alt="" onclick="imgSlider('thumb2.jpg'); changeColor('#017143')"></li>
+      <li><img src="./thumb1.jpg" alt="" onclick="imgSlider('thumb1.jpg'); changeColor('#eb7495')"></li>
+      <li><img src="./thumb3.jpg" alt="" onclick="imgSlider('thumb3.jpg'); changeColor('#d752b1')"></li>
+    </ul>
+    <ul class="sci">
+      <li><a href="#"><img src="" alt="facebook">face</a></li>
+      <li><a href="#"><img src="" alt="facebook">tuwiter</a></li>
+      <li><a href="#"><img src="" alt="facebook">insta</a></li>
+    </ul>
+  </section>
+  <script>
+    function imgSlider(anything) {
+      document.querySelector('.starbucks').src = anything
+
+    }
+    function changeColor(color) {
+      const circle = document.querySelector('.circle')
+      circle.style.background = color
+
+    }
+  </script>
+</body>
+
+</html>
